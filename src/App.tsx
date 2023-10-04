@@ -26,7 +26,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <Greet name="SetUp" version={10} isLogged={false} />
+      <Greet name="SetUp" isLogged={true} />
       <Person name={Details} />
       <People list={PeopleGroup} />
       <Status status="loading" />
