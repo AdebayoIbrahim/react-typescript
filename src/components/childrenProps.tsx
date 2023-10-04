@@ -1,5 +1,5 @@
 type PropsVal = {
-  children: string;
+  children: React.ReactNode;
 };
 const ChildrenProps = (props: PropsVal) => {
   return <div>{props.children}</div>;
