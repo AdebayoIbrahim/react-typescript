@@ -3,6 +3,7 @@ import Greet from "./components/Greet";
 import Person from "./components/Person";
 import People from "./components/People";
 import Status from "./components/Status";
+import ChildrenProps from "./components/childrenProps";
 function App() {
   const Details = {
     fname: "Martin",
@@ -28,6 +29,7 @@ function App() {
       <Person name={Details} />
       <People list={PeopleGroup} />
       <Status status="loading" />
+      <ChildrenProps>Fancy Text Here</ChildrenProps>
     </div>
   );
 }
