@@ -6,6 +6,7 @@ import Status from "./components/Status";
 import ChildrenProps from "./components/childrenProps";
 import MountText from "./mountText";
 import Button from "./components/Button";
+import Input from "./components/Input";
 function App() {
   const Details = {
     fname: "Martin",
@@ -37,6 +38,14 @@ function App() {
       <Button
         handleClick={(event, id) => {
           console.log("Clicked", event, id);
+        }}
+      />
+      <Input
+        id="from"
+        value=""
+        name="name"
+        handleChange={(e) => {
+          console.log("changed", e);
         }}
       />
     </div>
