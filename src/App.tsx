@@ -7,6 +7,7 @@ import ChildrenProps from "./components/childrenProps";
 import MountText from "./mountText";
 import Button from "./components/Button";
 import Input from "./components/Input";
+import Container from "./components/Container";
 function App() {
   const Details = {
     fname: "Martin",
@@ -47,6 +48,9 @@ function App() {
         handleChange={(e) => {
           console.log("changed", e);
         }}
+      />
+      <Container
+        styles={{ color: "red", background: "yellow", padding: "2rem" }}
       />
     </div>
   );
