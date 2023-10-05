@@ -15,16 +15,16 @@ function App() {
   };
   const PeopleGroup = [
     {
-      first: "Khalid",
-      last: "Rodri",
+      fname: "Khalid",
+      lname: "Rodri",
     },
     {
-      first: "Ibrahim",
-      last: "Abdullah",
+      fname: "Ibrahim",
+      lname: "Abdullah",
     },
     {
-      first: "Muhammad",
-      last: "quadri",
+      fname: "Muhammad",
+      lname: "quadri",
     },
   ];
   return (

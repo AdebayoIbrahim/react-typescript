@@ -1,14 +1,12 @@
+import { Name } from "./types/person";
 type Lists = {
-  list: {
-    first: string;
-    last: string;
-  }[];
+  list: Name[];
 };
 const People = (props: Lists) => {
   return (
     <div>
       {props.list.map((item, index) => {
-        return <h4 key={index}>{`${item.first}-${item.last}`}</h4>;
+        return <h4 key={index}>{`${item.fname}-${item.lname}`}</h4>;
       })}
     </div>
   );
