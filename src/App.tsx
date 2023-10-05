@@ -5,6 +5,7 @@ import People from "./components/People";
 import Status from "./components/Status";
 import ChildrenProps from "./components/childrenProps";
 import MountText from "./mountText";
+import Button from "./components/Button";
 function App() {
   const Details = {
     fname: "Martin",
@@ -33,6 +34,11 @@ function App() {
       <ChildrenProps>
         <MountText />
       </ChildrenProps>
+      <Button
+        handleClick={(event, id) => {
+          console.log("Clicked", event, id);
+        }}
+      />
     </div>
   );
 }
