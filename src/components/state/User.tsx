@@ -26,3 +26,13 @@ const User = () => {
 };
 
 export default User;
+
+// if user will be initialized after setup and will always have a value we can use type assertion
+
+// const [user, setUser] = useState<AuthUser>({} as AuthUser);
+
+// so we have
+{
+  /* <h4>User Name is {user.name}</h4> */
+}
+//   <h4>Email is{user?email}</h4>
